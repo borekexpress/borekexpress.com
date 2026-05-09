@@ -5,47 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Borek Express LLC | Texas Hot Shot Trucking</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; line-height: 1.6; }
-        header { background: #0d3b66; color: white; text-align: center; padding: 3rem 1rem; }
-        .container { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
-        h1, h2 { color: #0d3b66; }
-        .btn { display: inline-block; background: #0d3b66; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; margin: 10px; }
-        .btn:hover { background: #1a5a99; }
-        footer { text-align: center; padding: 2rem; background: #0d3b66; color: white; margin-top: 3rem; }
+        :root {
+            --blue: #0d3b66;
+            --orange: #f4a261;
+            --dark: #1e2937;
+        }
+        body { 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            margin: 0; padding: 0; 
+            background: #f8f9fa; 
+            color: #333; 
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(rgba(13,59,102,0.95), rgba(13,59,102,0.95)), url('https://picsum.photos/id/1015/2000/1200') center/cover;
+            color: white;
+            text-align: center;
+            padding: 5rem 1rem 3rem;
+        }
+        .container { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; }
+        h1 { font-size: 3rem; margin: 0; }
+        h2 { color: var(--blue); border-bottom: 3px solid var(--orange); padding-bottom: 10px; }
+        .hero-text { font-size: 1.4rem; max-width: 700px; margin: 1rem auto; }
+        .section { background: white; padding: 2.5rem; margin-bottom: 2rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        ul { padding-left: 1.2rem; }
+        li { margin: 12px 0; font-size: 1.1rem; }
+        .btn { 
+            display: inline-block; background: var(--orange); color: white; 
+            padding: 14px 32px; text-decoration: none; border-radius: 50px; 
+            font-weight: bold; margin: 10px; transition: all 0.3s;
+        }
+        .btn:hover { background: #e76f51; transform: translateY(-3px); }
+        footer { 
+            text-align: center; padding: 2.5rem; background: var(--dark); color: white; 
+        }
+        .usdot { font-size: 1.1rem; font-weight: bold; color: var(--orange); }
+        a { color: var(--blue); }
     </style>
 </head>
 <body>
 
     <header>
         <h1>Borek Express LLC</h1>
-        <p>Reliable Texas Hot Shot Trucking • USDOT 4580255</p>
+        <p class="hero-text">Reliable • Professional • Texas-Based Hot Shot Trucking</p>
+        <p class="usdot">USDOT 4580255 • Ready for Lease-On Opportunities</p>
     </header>
 
     <div class="container">
-        <h2>Welcome to Borek Express</h2>
-        <p><strong>Family-owned hot shot carrier</strong> based in Texas, ready for Lease-On opportunities.</p>
-        
-        <h2>Our Services</h2>
-        <ul>
-            <li>Hot Shot / Expedited loads with Chevy 2500HD + 40' gooseneck trailer</li>
-            <li>General freight, oilfield, construction, machinery, and building materials</li>
-            <li>Intrastate Texas runs (flexible and reliable)</li>
-            <li>Professional securement and on-time performance</li>
-        </ul>
 
-        <h2>About Us</h2>
-        <p>Sean Borek (driver) and Alisa Borek (admin/dispatch) operate Borek Express LLC. With a clean driving record, active USDOT number, and strong work ethic, we are seeking quality Lease-On partnerships in Texas.</p>
+        <div class="section">
+            <h2>Welcome</h2>
+            <p><strong>Family-owned hot shot carrier</strong> operating in Texas. Sean (driver) and Alisa (admin/dispatch) bring dependable service with a clean record and full-time RV lifestyle.</p>
+        </div>
 
-        <h2>Contact Us</h2>
-        <p><strong>Email:</strong> <a href="mailto:alisa@borekexpress.com">alisa@borekexpress.com</a></p>
-        <p><strong>Phone:</strong> [817-408-5438]</p>
-        <p><strong>USDOT:</strong> 4580255</p>
+        <div class="section">
+            <h2>Our Services</h2>
+            <ul>
+                <li>✅ Hot Shot & Expedited loads with 2500HD + 40' gooseneck trailer</li>
+                <li>✅ General freight, oilfield supplies, construction materials, machinery & equipment</li>
+                <li>✅ Securement with straps, chains, and tarps — on-time delivery focus</li>
+                <li>✅ Intrastate Texas runs (flexible scheduling)</li>
+            </ul>
+        </div>
 
-        <a href="mailto:alisa@borekexpress.com" class="btn">Email for Lease-On Opportunities</a>
+        <div class="section">
+            <h2>About Us</h2>
+            <p>We are a new but serious hot shot operation looking for quality Lease-On partnerships. With our USDOT number active and professional setup complete, we are ready to haul reliably under your authority while we build our own rig.</p>
+        </div>
+
+        <div class="section" style="text-align:center;">
+            <h2>Contact Us</h2>
+            <p><strong>Email:</strong> <a href="mailto:alisa@borekexpress.com">alisa@borekexpress.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:8174085438">817-408-5438</a></p>
+            <p><strong>USDOT:</strong> 4580255</p>
+            <a href="mailto:alisa@borekexpress.com" class="btn">Reach Out for Lease-On Opportunities</a>
+        </div>
+
     </div>
 
     <footer>
-        <p>&copy; 2026 Borek Express LLC • All Rights Reserved • Texas Hot Shot Trucking</p>
+        <p>&copy; 2026 Borek Express LLC • Texas Hot Shot Trucking • All Rights Reserved</p>
     </footer>
 
 </body>
